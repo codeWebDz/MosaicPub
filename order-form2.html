@@ -11,7 +11,7 @@
 
 <div class="container" id="content">
     <div class="content-form">
-    <h1> formulaire de commande </h1>
+    <h1> Formulaire de Commande </h1>
     <div class="formulaire">
         <form action="" >
             <div class="labelgroupe">
@@ -35,16 +35,18 @@
 
 
             
-
+            <div class="labelgroupe row">
+               
+                  <label for="nom" >Budget | تحديد الميزانية </label>
+            </div>
 
                 <div class="labelgroupe row">
-                    <div class="col2"  style="margin-right: 50px;">
-                        <label for="nom">Budget | تحديد الميزانية </label><br>
+
+                    <div class="col2 "  style="margin-right: 50px;margin-top: -12px;">
                         <input class="full" type="" placeholder="min">
                     </div>
-                    <div class="col2">
-                        <label for="nom"> </label><br>
-                        <input class="full" type="" placeholder="max">
+                    <div class="col2 " style="margin-top: -12px;">
+                        <input class="full " type="" placeholder="max">
                     </div>
                 </div>
              
@@ -137,8 +139,8 @@
                                     <label for="papier" style=" font-size: 14px; padding-top: 13px ;">Alucoband</label>
                                 </div>
                                 <div class="checkbox-item radio-item" style="background-image: url(images/services/forex.jpg); background-size: 200px 145px ; background-repeat: no-repeat;">
-                                    <input type="radio" id="autocollant" name="Matière" >
-                                    <label for="autocollant">Forex</label>
+                                    <input type="radio" id="forex" name="Matière" >
+                                    <label for="forex">Forex</label>
                                 </div>
                                 <div class="checkbox-item radio-item" style="background-image: url(images/services/pmma.jpg); background-size: 200px 145px ; background-repeat: no-repeat;">
                                     <input type="radio" id="pmma" name="Matière" >
@@ -596,9 +598,7 @@
        @media only screen and (max-width: 700px) {
                        
                         .container {
-                           
-                                width: 100%;
-                                
+                                width: 100%; 
                                 
                         }
 
@@ -696,48 +696,68 @@
 
 
        @media only screen and (max-width: 400px) {
-                       body{
-                              
-                       }
-                        .container {
-                                width: 100%;
-                               
-                                
-                        }
-
+                       
+                       
                        .content-form h1 {
                         font-size: 19px;
                         text-align: center;
                        }
                        .content-form {
                             /* Styles de votre élément centré */
-                            width:100%;
-                            scale:0.7 1;
+                            width:60%;
+                           padding-right: 45px;
+                          margin-left: -5px;
+                          
                        }
                        .formulaire{
-                   
-                            width: 120%;
+                  
+                            width: 110%;
                             padding-right:0px;
                             margin-left: -88px;
-                            
                         }
                          form{
-                            
-                            scale: 0.9 1;
+                           
+                           
                             width: 135%;
-                          
+                            margin-left: -89px;
                         
                         }
                        
+                        .labelgroupe{
+                            width: 87%;
+                           margin-left: 10px;
+                            margin-top: 15px ;     
+                             
+
+                        }
+                        .labelgroupe .full{
+                            width: 100%;
+                           
+                            margin-left: -5px;
+                        }
                         
+
+                        }
+                        
+                        .checkbox-group {
+                     
+                   
+                }
+                   
+                   
+                   .checkbox-item label{
+                   
+                        
+                    
+                   }
                   
-                       
+                   
                         .radio-item label{
                      margin-top: 94px;
                      
                     }
                        
-                     } 
+                     
                     </style>
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
